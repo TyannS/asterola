@@ -2,6 +2,7 @@ package com.tyanns.asterola.item;
 
 import com.tyanns.asterola.Asterola;
 import net.fabricmc.fabric.api.creativetab.v1.FabricCreativeModeTab;
+import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.Identifier;
@@ -22,6 +23,7 @@ public class ModCreativeModeTabs {
             }).build();
 
     public static void register(){
-        Asterola.LOGGER.info("Registering Custom Creative Mode Tab for" + Asterola.MOD_ID);
+        Asterola.LOGGER.info("Registering Custom Creative Mode Tab for " + Asterola.MOD_ID);
+        Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, ASTEROLA_TAB, ASTEROLA);
     }
 }
