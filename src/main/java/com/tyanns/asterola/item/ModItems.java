@@ -32,9 +32,5 @@ public class ModItems {
 
     public static void register() {
         Asterola.LOGGER.info("Registering Mod Items for " + Asterola.MOD_ID);
-        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.INGREDIENTS)
-                .register(fabricCreativeModeTabOutput -> {
-                    fabricCreativeModeTabOutput.accept(ROSE_GOLD_INGOT);
-                });
     }
 }
