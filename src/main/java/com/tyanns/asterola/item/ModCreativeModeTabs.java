@@ -21,7 +21,7 @@ public class ModCreativeModeTabs {
                 output.accept(ModItems.ROSE_GOLD_INGOT);
             }).build();
 
-    public static void Register(){
+    public static void register(){
         Asterola.LOGGER.info("Registering Custom Creative Mode Tab for" + Asterola.MOD_ID);
     }
 }

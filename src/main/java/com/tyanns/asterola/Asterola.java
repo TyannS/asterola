@@ -1,5 +1,6 @@
 package com.tyanns.asterola;
 
+import com.tyanns.asterola.item.ModCreativeModeTabs;
 import com.tyanns.asterola.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -13,6 +14,7 @@ public class Asterola implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		ModItems.register();
+		ModCreativeModeTabs.register();
 		LOGGER.info("Asterola let's go!");
 	}
 }
