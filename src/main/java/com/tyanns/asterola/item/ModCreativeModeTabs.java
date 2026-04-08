@@ -22,6 +22,6 @@ public class ModCreativeModeTabs {
             }).build();
 
     public static void register(){
-        Asterola.LOGGER.info("Registering Custom Creative Mode Tab for" + Asterola.MOD_ID);
+        Asterola.LOGGER.info("Registering Custom Creative Mode Tab for " + Asterola.MOD_ID);
     }
 }
