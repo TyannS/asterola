@@ -1,6 +1,7 @@
 package com.tyanns.asterola.item;
 
 import com.tyanns.asterola.Asterola;
+import com.tyanns.asterola.block.ModBlocks;
 import net.fabricmc.fabric.api.creativetab.v1.FabricCreativeModeTab;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -20,6 +21,7 @@ public class ModCreativeModeTabs {
             .title(Component.translatable("itemgroup.asterola"))
             .displayItems((parameters, output) -> {
                 output.accept(ModItems.ROSE_GOLD_INGOT);
+                output.accept(ModBlocks.ROSE_GOLD_BLOCK);
             }).build();
 
     public static void register(){
