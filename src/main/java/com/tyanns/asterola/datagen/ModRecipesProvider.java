@@ -10,7 +10,6 @@ import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.data.recipes.RecipeProvider;
 import net.minecraft.world.item.Items;
 
-import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
 public class ModRecipesProvider extends FabricRecipeProvider {
@@ -23,9 +22,20 @@ public class ModRecipesProvider extends FabricRecipeProvider {
         return new RecipeProvider(provider, recipeOutput) {
             @Override
             public void buildRecipes() {
-                nineBlockStorageRecipes(RecipeCategory.MISC, ModItems.ROSE_GOLD_INGOT, RecipeCategory.BUILDING_BLOCKS, ModBlocks.ROSE_GOLD_BLOCK);
+                shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ROSE_GOLD_BLOCK)
+                        .pattern("###")
+                        .pattern("###")
+                        .pattern("###")
+                        .define('#', ModItems.ROSE_GOLD_INGOT)
+                        .unlockedBy("has_rose_gold_ingot", has(ModItems.ROSE_GOLD_INGOT))
+                        .save(recipeOutput);
 
-                shapeless(RecipeCategory.MISC, ModItems.ROSE_GOLD_INGOT)
+                shapeless(RecipeCategory.MISC, ModItems.ROSE_GOLD_INGOT, 9)
+                        .requires(ModBlocks.ROSE_GOLD_BLOCK)
+                        .unlockedBy("has_rose_gold_block", has(ModBlocks.ROSE_GOLD_BLOCK))
+                        .save(recipeOutput, "rose_gold_ingot_from_rose_gold_block");
+
+                shapeless(RecipeCategory.MISC, ModItems.ROSE_GOLD_INGOT, 4)
                         .requires(Items.COPPER_INGOT)
                         .requires(Items.GOLD_INGOT, 3)
                         .unlockedBy("has_item_copper_ingot", has(Items.COPPER_INGOT))
