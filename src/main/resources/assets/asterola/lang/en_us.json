@@ -1,5 +1,6 @@
 {
   "item.asterola.rose_gold_ingot": "Rose Gold Ingot",
   "block.asterola.rose_gold_block": "Rose Gold Block",
-  "itemgroup.asterola": "Asterola"
+  "itemgroup.asterola": "Asterola",
+  "trim_material.asterola.rose_gold": "Rose Gold Material"
 }
