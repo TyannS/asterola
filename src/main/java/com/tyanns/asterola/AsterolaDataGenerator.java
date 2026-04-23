@@ -1,8 +1,12 @@
 package com.tyanns.asterola;
 
 import com.tyanns.asterola.datagen.*;
+import com.tyanns.asterola.trim.ModTrimMaterials;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
+import net.minecraft.core.RegistrySetBuilder;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.resources.ResourceKey;
 
 public class AsterolaDataGenerator implements DataGeneratorEntrypoint {
 	@Override
@@ -15,6 +19,12 @@ public class AsterolaDataGenerator implements DataGeneratorEntrypoint {
 		pack.addProvider(ModItemTagsProvider::new);
 		pack.addProvider(ModModelsProvider::new);
 		pack.addProvider(ModRecipesProvider::new);
+		pack.addProvider(ModRegistryDataProvider::new);
 		pack.addProvider(ModZhCnLangProvider::new);
+	}
+
+	@Override
+	public void buildRegistry(RegistrySetBuilder registryBuilder) {
+		registryBuilder.add(Registries.TRIM_MATERIAL, ModTrimMaterials::bootstrap);
 	}
 }

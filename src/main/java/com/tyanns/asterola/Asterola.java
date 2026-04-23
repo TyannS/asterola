@@ -3,6 +3,7 @@ package com.tyanns.asterola;
 import com.tyanns.asterola.block.ModBlocks;
 import com.tyanns.asterola.item.ModCreativeModeTabs;
 import com.tyanns.asterola.item.ModItems;
+import com.tyanns.asterola.trim.ModTrimMaterials;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
