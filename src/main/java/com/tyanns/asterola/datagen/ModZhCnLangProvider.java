@@ -21,6 +21,6 @@ public class ModZhCnLangProvider extends FabricLanguageProvider {
 
         translationBuilder.add("itemgroup.asterola", "星界");
 
-        translationBuilder.add("trim_material.asterola.rose_gold", "玫瑰金材质");
+        translationBuilder.add("trim_material.asterola.rose_gold", "玫瑰金质");
     }
 }
