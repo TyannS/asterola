@@ -8,13 +8,14 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.equipment.trim.TrimMaterials;
 
 import java.util.function.Function;
 
 public class ModItems {
 
     public static final Item ROSE_GOLD_INGOT = registerItem("rose_gold_ingot", new Item.Properties().trimMaterial(ModTrimMaterials.ROSE_GOLD));
+
+    public static final Item ROSE_GOLDEN_APPLE = registerItem("rose_golden_apple",new Item.Properties().food(ModFoods.ROSE_GOLDEN_APPLE,ModConsumables.ROSE_GOLDEN_APPLE));
 
     private static Item registerItem(final String name, final Function<Item.Properties, Item> itemFactory, final Item.Properties properties) {
         ResourceKey<Item> key = ResourceKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(Asterola.MOD_ID, name));

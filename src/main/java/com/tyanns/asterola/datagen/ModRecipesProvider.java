@@ -41,6 +41,16 @@ public class ModRecipesProvider extends FabricRecipeProvider {
                         .unlockedBy("has_item_copper_ingot", has(Items.COPPER_INGOT))
                         .unlockedBy("has_item_gold_ingot", has(Items.GOLD_INGOT))
                         .save(recipeOutput);
+
+                shaped(RecipeCategory.FOOD, ModItems.ROSE_GOLDEN_APPLE)
+                        .pattern("###")
+                        .pattern("#X#")
+                        .pattern("###")
+                        .define('#', ModItems.ROSE_GOLD_INGOT)
+                        .define('X', Items.APPLE)
+                        .unlockedBy("has_rose_gold_ingot", has(ModItems.ROSE_GOLD_INGOT))
+                        .unlockedBy("has_apple", has(Items.APPLE))
+                        .save(recipeOutput);
             }
         };
     }

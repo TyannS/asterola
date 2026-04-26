@@ -1,6 +1,5 @@
 package com.tyanns.asterola.datagen;
 
-import com.tyanns.asterola.Asterola;
 import com.tyanns.asterola.block.ModBlocks;
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagsProvider;

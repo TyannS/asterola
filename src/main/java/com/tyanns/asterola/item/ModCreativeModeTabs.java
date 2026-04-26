@@ -22,6 +22,7 @@ public class ModCreativeModeTabs {
             .displayItems((parameters, output) -> {
                 output.accept(ModItems.ROSE_GOLD_INGOT);
                 output.accept(ModBlocks.ROSE_GOLD_BLOCK);
+                output.accept(ModItems.ROSE_GOLDEN_APPLE);
             }).build();
 
     public static void register(){

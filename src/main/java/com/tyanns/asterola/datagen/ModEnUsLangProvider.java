@@ -16,6 +16,7 @@ public class ModEnUsLangProvider extends FabricLanguageProvider {
     @Override
     public void generateTranslations(HolderLookup.Provider provider, TranslationBuilder translationBuilder) {
         translationBuilder.add(ModItems.ROSE_GOLD_INGOT, "Rose Gold Ingot");
+        translationBuilder.add(ModItems.ROSE_GOLDEN_APPLE,"Rose Golden Apple");
 
         translationBuilder.add(ModBlocks.ROSE_GOLD_BLOCK, "Rose Gold Block");
 

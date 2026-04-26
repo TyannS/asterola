@@ -16,6 +16,7 @@ public class ModZhCnLangProvider extends FabricLanguageProvider {
     @Override
     public void generateTranslations(HolderLookup.Provider provider, TranslationBuilder translationBuilder) {
         translationBuilder.add(ModItems.ROSE_GOLD_INGOT, "玫瑰金锭");
+        translationBuilder.add(ModItems.ROSE_GOLDEN_APPLE, "玫瑰金苹果");
 
         translationBuilder.add(ModBlocks.ROSE_GOLD_BLOCK, "玫瑰金块");
 
