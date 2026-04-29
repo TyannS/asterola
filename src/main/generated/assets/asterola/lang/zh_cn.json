@@ -1,7 +1,10 @@
 {
   "block.asterola.rose_gold_block": "玫瑰金块",
+  "item.asterola.music_disc_you_are_beautiful_vomit_version": "音乐唱片",
+  "item.asterola.music_disc_you_are_beautiful_vomit_version.decs": "Tiktok@justinjmooremusic - You Are Beautiful (呕吐版)",
   "item.asterola.rose_gold_ingot": "玫瑰金锭",
   "item.asterola.rose_golden_apple": "玫瑰金苹果",
   "itemgroup.asterola": "星界",
+  "jukebox_song.asterola.you_are_beautiful_vomit_version": "Tiktok@justinjmooremusic - You Are Beautiful (呕吐版)",
   "trim_material.asterola.rose_gold": "玫瑰金质"
 }

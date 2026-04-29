@@ -23,10 +23,10 @@ public class ModCreativeModeTabs {
                 output.accept(ModItems.ROSE_GOLD_INGOT);
                 output.accept(ModBlocks.ROSE_GOLD_BLOCK);
                 output.accept(ModItems.ROSE_GOLDEN_APPLE);
+                output.accept(ModItems.MUSIC_DISC_YOU_ARE_BEAUTIFUL_VOMIT_VERSION);
             }).build();
 
     public static void register(){
-        Asterola.LOGGER.info("Registering Custom Creative Mode Tab for " + Asterola.MOD_ID);
         Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, ASTEROLA_TAB, ASTEROLA);
     }
 }

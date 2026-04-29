@@ -1,0 +1,10 @@
+{
+  "music_disc.you_are_beautiful_vomit_version": {
+    "sounds": [
+      {
+        "name": "asterola:records/you_are_beautiful_vomit_version",
+        "stream": true
+      }
+    ]
+  }
+}

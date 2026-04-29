@@ -16,12 +16,17 @@ public class ModEnUsLangProvider extends FabricLanguageProvider {
     @Override
     public void generateTranslations(HolderLookup.Provider provider, TranslationBuilder translationBuilder) {
         translationBuilder.add(ModItems.ROSE_GOLD_INGOT, "Rose Gold Ingot");
-        translationBuilder.add(ModItems.ROSE_GOLDEN_APPLE,"Rose Golden Apple");
+        translationBuilder.add(ModItems.ROSE_GOLDEN_APPLE, "Rose Golden Apple");
 
         translationBuilder.add(ModBlocks.ROSE_GOLD_BLOCK, "Rose Gold Block");
 
         translationBuilder.add("itemgroup.asterola", "Asterola");
 
         translationBuilder.add("trim_material.asterola.rose_gold", "Rose Gold Material");
+
+        translationBuilder.add("item.asterola.music_disc_you_are_beautiful_vomit_version", "Music Disc");
+        translationBuilder.add("item.asterola.music_disc_you_are_beautiful_vomit_version.decs", "Tiktok@justinjmooremusic - You Are Beautiful (Vomit Version)");
+
+        translationBuilder.add("jukebox_song.asterola.you_are_beautiful_vomit_version", "Tiktok@justinjmooremusic - You Are Beautiful (Vomit Version)");
     }
 }

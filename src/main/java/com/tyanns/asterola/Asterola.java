@@ -3,6 +3,7 @@ package com.tyanns.asterola;
 import com.tyanns.asterola.block.ModBlocks;
 import com.tyanns.asterola.item.ModCreativeModeTabs;
 import com.tyanns.asterola.item.ModItems;
+import com.tyanns.asterola.sound.ModSoundEvents;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -14,6 +15,7 @@ public class Asterola implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModSoundEvents.register();
 		ModItems.register();
 		ModBlocks.register();
 		ModCreativeModeTabs.register();
