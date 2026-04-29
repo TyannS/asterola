@@ -25,8 +25,8 @@ public class ModZhCnLangProvider extends FabricLanguageProvider {
         translationBuilder.add("trim_material.asterola.rose_gold", "玫瑰金质");
 
         translationBuilder.add("item.asterola.music_disc_you_are_beautiful_vomit_version", "音乐唱片");
-        translationBuilder.add("item.asterola.music_disc_you_are_beautiful_vomit_version.decs", "Tiktok@justinjmooremusic - You Are Beautiful (呕吐版)");
+        translationBuilder.add("item.asterola.music_disc_you_are_beautiful_vomit_version.decs", "Tiktok@justinjmooremusic - You Are Beautiful（呕吐版）");
 
-        translationBuilder.add("jukebox_song.asterola.you_are_beautiful_vomit_version", "Tiktok@justinjmooremusic - You Are Beautiful (呕吐版)");
+        translationBuilder.add("jukebox_song.asterola.you_are_beautiful_vomit_version", "Tiktok@justinjmooremusic - You Are Beautiful（呕吐版）");
     }
 }
