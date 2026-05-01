@@ -21,13 +21,14 @@ public class ModCreativeModeTabs {
             .title(Component.translatable("itemgroup.asterola"))
             .displayItems((parameters, output) -> {
                 output.accept(ModItems.ROSE_GOLD_INGOT);
+                output.accept(ModBlocks.ROSE_GOLD_BLOCK);
                 output.accept(ModItems.ROSE_GOLDEN_APPLE);
                 output.accept(ModItems.ROSE_GOLDEN_SWORD);
                 output.accept(ModItems.ROSE_GOLDEN_SHOVEL);
                 output.accept(ModItems.ROSE_GOLDEN_PICKAXE);
                 output.accept(ModItems.ROSE_GOLDEN_AXE);
                 output.accept(ModItems.ROSE_GOLDEN_HOE);
-                output.accept(ModBlocks.ROSE_GOLD_BLOCK);
+                output.accept(ModItems.ROSE_GOLDEN_SPEAR);
                 output.accept(ModItems.MUSIC_DISC_YOU_ARE_BEAUTIFUL_VOMIT_VERSION);
             }).build();
 

@@ -92,6 +92,16 @@ public class ModRecipesProvider extends FabricRecipeProvider {
                         .unlockedBy("has_stick", has(Items.STICK))
                         .save(recipeOutput);
 
+                shaped(RecipeCategory.TOOLS, ModItems.ROSE_GOLDEN_SPEAR)
+                        .pattern("  X")
+                        .pattern(" # ")
+                        .pattern("#  ")
+                        .define('#', Items.STICK)
+                        .define('X', ModItems.ROSE_GOLD_INGOT)
+                        .unlockedBy("has_rose_gold_ingot", has(ModItems.ROSE_GOLD_INGOT))
+                        .unlockedBy("has_stick", has(Items.STICK))
+                        .save(recipeOutput);
+
                 shaped(RecipeCategory.FOOD, ModItems.ROSE_GOLDEN_APPLE)
                         .pattern("###")
                         .pattern("#X#")

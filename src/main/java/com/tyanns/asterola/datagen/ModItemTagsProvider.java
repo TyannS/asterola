@@ -29,6 +29,8 @@ public class ModItemTagsProvider extends FabricTagsProvider.ItemTagsProvider {
                 .add(ModItems.ROSE_GOLDEN_AXE);
         valueLookupBuilder(ItemTags.HOES)
                 .add(ModItems.ROSE_GOLDEN_HOE);
+        valueLookupBuilder(ItemTags.SPEARS)
+                .add(ModItems.ROSE_GOLDEN_SPEAR);
         valueLookupBuilder(ModItemTags.ROSE_GOLD_TOOL_MATERIALS)
                 .add(ModItems.ROSE_GOLD_INGOT);
     }
