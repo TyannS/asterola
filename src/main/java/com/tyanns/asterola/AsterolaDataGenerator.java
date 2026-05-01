@@ -18,6 +18,7 @@ public class AsterolaDataGenerator implements DataGeneratorEntrypoint {
         pack.addProvider(ModBlockTagsProvider::new);
         pack.addProvider(ModEnUsLangProvider::new);
         pack.addProvider(ModItemTagsProvider::new);
+        pack.addProvider(ModLootTablesProvider::new);
         pack.addProvider(ModModelsProvider::new);
         pack.addProvider(ModRecipesProvider::new);
         pack.addProvider(ModRegistryDataProvider::new);
