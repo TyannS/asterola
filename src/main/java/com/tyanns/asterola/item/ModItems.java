@@ -1,6 +1,8 @@
 package com.tyanns.asterola.item;
 
 import com.tyanns.asterola.Asterola;
+import com.tyanns.asterola.food.ModConsumables;
+import com.tyanns.asterola.food.ModFoods;
 import com.tyanns.asterola.sound.ModJukeboxSongs;
 import com.tyanns.asterola.trim.ModTrimMaterials;
 import net.minecraft.core.Registry;
@@ -17,7 +19,7 @@ public class ModItems {
 
     public static final Item ROSE_GOLD_INGOT = registerItem("rose_gold_ingot", new Item.Properties().trimMaterial(ModTrimMaterials.ROSE_GOLD));
 
-    public static final Item ROSE_GOLDEN_APPLE = registerItem("rose_golden_apple",new Item.Properties().food(ModFoods.ROSE_GOLDEN_APPLE,ModConsumables.ROSE_GOLDEN_APPLE));
+    public static final Item ROSE_GOLDEN_APPLE = registerItem("rose_golden_apple", new Item.Properties().food(ModFoods.ROSE_GOLDEN_APPLE, ModConsumables.ROSE_GOLDEN_APPLE));
 
     public static final Item MUSIC_DISC_YOU_ARE_BEAUTIFUL_VOMIT_VERSION = registerItem("music_disc_you_are_beautiful_vomit_version", (new Item.Properties()).stacksTo(1).rarity(Rarity.UNCOMMON).jukeboxPlayable(ModJukeboxSongs.YOU_ARE_BEAUTIFUL_VOMIT_VERSION));
 

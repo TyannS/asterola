@@ -1,4 +1,4 @@
-package com.tyanns.asterola.item;
+package com.tyanns.asterola.food;
 
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
