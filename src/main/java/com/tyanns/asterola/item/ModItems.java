@@ -25,7 +25,7 @@ public class ModItems {
     public static final Item ROSE_GOLDEN_SHOVEL = registerItem("rose_golden_shovel", p -> new ShovelItem(ModToolMaterials.ROSE_GOLD, 1.5F, -3.0F, p));
     public static final Item ROSE_GOLDEN_PICKAXE = registerItem("rose_golden_pickaxe", (new Item.Properties()).pickaxe(ModToolMaterials.ROSE_GOLD, 1.0F, -2.8F));
     public static final Item ROSE_GOLDEN_AXE = registerItem("rose_golden_axe",p -> new AxeItem(ModToolMaterials.ROSE_GOLD, 7.0F, -2.9F, p));
-    public static final Item ROSE_GOLDEN_HOE = registerItem("rose_golden_hoe", p -> new HoeItem(ModToolMaterials.ROSE_GOLD, 0.0F, -1.5F, p));
+    public static final Item ROSE_GOLDEN_HOE = registerItem("rose_golden_hoe", p -> new HoeItem(ModToolMaterials.ROSE_GOLD, -1.0F, -1.5F, p));
     public static final Item ROSE_GOLDEN_SPEAR = registerItem("rose_golden_spear", (new Item.Properties()).spear(ModToolMaterials.ROSE_GOLD, 1.05F, 0.95F, 0.6F, 3.5F, 12.0F, 8.0F, 5.1F, 13.0F, 4.6F));
     public static final Item ROSE_GOLDEN_HELMET = registerItem("rose_golden_helmet", (new Item.Properties()).humanoidArmor(ModArmorMaterials.ROSE_GOLD, ArmorType.HELMET));
     public static final Item ROSE_GOLDEN_CHESTPLATE = registerItem("rose_golden_chestplate", (new Item.Properties()).humanoidArmor(ModArmorMaterials.ROSE_GOLD, ArmorType.CHESTPLATE));
