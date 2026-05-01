@@ -9,6 +9,7 @@ import net.minecraft.sounds.SoundEvent;
 
 public class ModSoundEvents {
     public static final Holder.Reference<SoundEvent> MUSIC_DISC_YOU_ARE_BEAUTIFUL_VOMIT_VERSION = registerForHolder("music_disc.you_are_beautiful_vomit_version");
+    public static final Holder<SoundEvent> ARMOR_EQUIP_ROSE_GOLD = registerForHolder("item.armor.equip_rose_gold");
 
     private static Holder<SoundEvent> register(final Identifier id, final Identifier soundId, final float range) {
         return Registry.registerForHolder(BuiltInRegistries.SOUND_EVENT, id, SoundEvent.createFixedRangeEvent(soundId, range));

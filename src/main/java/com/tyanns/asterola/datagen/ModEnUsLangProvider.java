@@ -37,6 +37,7 @@ public class ModEnUsLangProvider extends FabricLanguageProvider {
         translationBuilder.add("item.asterola.music_disc_you_are_beautiful_vomit_version", "Music Disc");
         translationBuilder.add("item.asterola.music_disc_you_are_beautiful_vomit_version.decs", "Tiktok@justinjmooremusic - You Are Beautiful (Vomit Version)");
 
+        translationBuilder.add("subtitles.item.armor.equip_rose_gold","Rose gold armor clinks");
         translationBuilder.add("jukebox_song.asterola.you_are_beautiful_vomit_version", "Tiktok@justinjmooremusic - You Are Beautiful (Vomit Version)");
     }
 }
