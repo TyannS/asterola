@@ -42,6 +42,56 @@ public class ModRecipesProvider extends FabricRecipeProvider {
                         .unlockedBy("has_item_gold_ingot", has(Items.GOLD_INGOT))
                         .save(recipeOutput);
 
+                shaped(RecipeCategory.TOOLS, ModItems.ROSE_GOLDEN_SWORD)
+                        .pattern("X")
+                        .pattern("X")
+                        .pattern("#")
+                        .define('#', Items.STICK)
+                        .define('X', ModItems.ROSE_GOLD_INGOT)
+                        .unlockedBy("has_rose_gold_ingot", has(ModItems.ROSE_GOLD_INGOT))
+                        .unlockedBy("has_stick", has(Items.STICK))
+                        .save(recipeOutput);
+
+                shaped(RecipeCategory.TOOLS, ModItems.ROSE_GOLDEN_SHOVEL)
+                        .pattern("X")
+                        .pattern("#")
+                        .pattern("#")
+                        .define('#', Items.STICK)
+                        .define('X', ModItems.ROSE_GOLD_INGOT)
+                        .unlockedBy("has_rose_gold_ingot", has(ModItems.ROSE_GOLD_INGOT))
+                        .unlockedBy("has_stick", has(Items.STICK))
+                        .save(recipeOutput);
+
+                shaped(RecipeCategory.TOOLS, ModItems.ROSE_GOLDEN_PICKAXE)
+                        .pattern("XXX")
+                        .pattern(" # ")
+                        .pattern(" # ")
+                        .define('#', Items.STICK)
+                        .define('X', ModItems.ROSE_GOLD_INGOT)
+                        .unlockedBy("has_rose_gold_ingot", has(ModItems.ROSE_GOLD_INGOT))
+                        .unlockedBy("has_stick", has(Items.STICK))
+                        .save(recipeOutput);
+
+                shaped(RecipeCategory.TOOLS, ModItems.ROSE_GOLDEN_AXE)
+                        .pattern("XX")
+                        .pattern("X#")
+                        .pattern(" #")
+                        .define('#', Items.STICK)
+                        .define('X', ModItems.ROSE_GOLD_INGOT)
+                        .unlockedBy("has_rose_gold_ingot", has(ModItems.ROSE_GOLD_INGOT))
+                        .unlockedBy("has_stick", has(Items.STICK))
+                        .save(recipeOutput);
+
+                shaped(RecipeCategory.TOOLS, ModItems.ROSE_GOLDEN_HOE)
+                        .pattern("XX")
+                        .pattern(" #")
+                        .pattern(" #")
+                        .define('#', Items.STICK)
+                        .define('X', ModItems.ROSE_GOLD_INGOT)
+                        .unlockedBy("has_rose_gold_ingot", has(ModItems.ROSE_GOLD_INGOT))
+                        .unlockedBy("has_stick", has(Items.STICK))
+                        .save(recipeOutput);
+
                 shaped(RecipeCategory.FOOD, ModItems.ROSE_GOLDEN_APPLE)
                         .pattern("###")
                         .pattern("#X#")

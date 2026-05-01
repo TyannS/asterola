@@ -16,6 +16,11 @@ public class ModEnUsLangProvider extends FabricLanguageProvider {
     @Override
     public void generateTranslations(HolderLookup.Provider provider, TranslationBuilder translationBuilder) {
         translationBuilder.add(ModItems.ROSE_GOLD_INGOT, "Rose Gold Ingot");
+        translationBuilder.add(ModItems.ROSE_GOLDEN_SWORD,"Rose Golden Sword");
+        translationBuilder.add(ModItems.ROSE_GOLDEN_SHOVEL,"Rose Golden Shovel");
+        translationBuilder.add(ModItems.ROSE_GOLDEN_PICKAXE,"Rose Golden Pickaxe");
+        translationBuilder.add(ModItems.ROSE_GOLDEN_AXE,"Rose Golden Axe");
+        translationBuilder.add(ModItems.ROSE_GOLDEN_HOE,"Rose Golden Hoe");
         translationBuilder.add(ModItems.ROSE_GOLDEN_APPLE, "Rose Golden Apple");
 
         translationBuilder.add(ModBlocks.ROSE_GOLD_BLOCK, "Rose Gold Block");
