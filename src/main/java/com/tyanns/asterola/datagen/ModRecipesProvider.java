@@ -42,7 +42,7 @@ public class ModRecipesProvider extends FabricRecipeProvider {
                         .unlockedBy("has_item_gold_ingot", has(Items.GOLD_INGOT))
                         .save(recipeOutput);
 
-                shaped(RecipeCategory.TOOLS, ModItems.ROSE_GOLDEN_SWORD)
+                shaped(RecipeCategory.COMBAT, ModItems.ROSE_GOLDEN_SWORD)
                         .pattern("X")
                         .pattern("X")
                         .pattern("#")
@@ -92,7 +92,7 @@ public class ModRecipesProvider extends FabricRecipeProvider {
                         .unlockedBy("has_stick", has(Items.STICK))
                         .save(recipeOutput);
 
-                shaped(RecipeCategory.TOOLS, ModItems.ROSE_GOLDEN_SPEAR)
+                shaped(RecipeCategory.COMBAT, ModItems.ROSE_GOLDEN_SPEAR)
                         .pattern("  X")
                         .pattern(" # ")
                         .pattern("#  ")
@@ -100,6 +100,36 @@ public class ModRecipesProvider extends FabricRecipeProvider {
                         .define('X', ModItems.ROSE_GOLD_INGOT)
                         .unlockedBy("has_rose_gold_ingot", has(ModItems.ROSE_GOLD_INGOT))
                         .unlockedBy("has_stick", has(Items.STICK))
+                        .save(recipeOutput);
+
+                shaped(RecipeCategory.COMBAT, ModItems.ROSE_GOLDEN_HELMET)
+                        .pattern("XXX")
+                        .pattern("X X")
+                        .define('X', ModItems.ROSE_GOLD_INGOT)
+                        .unlockedBy("has_rose_gold_ingot", has(ModItems.ROSE_GOLD_INGOT))
+                        .save(recipeOutput);
+
+                shaped(RecipeCategory.COMBAT, ModItems.ROSE_GOLDEN_CHESTPLATE)
+                        .pattern("X X")
+                        .pattern("XXX")
+                        .pattern("XXX")
+                        .define('X', ModItems.ROSE_GOLD_INGOT)
+                        .unlockedBy("has_rose_gold_ingot", has(ModItems.ROSE_GOLD_INGOT))
+                        .save(recipeOutput);
+
+                shaped(RecipeCategory.COMBAT, ModItems.ROSE_GOLDEN_LEGGINGS)
+                        .pattern("XXX")
+                        .pattern("X X")
+                        .pattern("X X")
+                        .define('X', ModItems.ROSE_GOLD_INGOT)
+                        .unlockedBy("has_rose_gold_ingot", has(ModItems.ROSE_GOLD_INGOT))
+                        .save(recipeOutput);
+
+                shaped(RecipeCategory.COMBAT, ModItems.ROSE_GOLDEN_BOOTS)
+                        .pattern("X X")
+                        .pattern("X X")
+                        .define('X', ModItems.ROSE_GOLD_INGOT)
+                        .unlockedBy("has_rose_gold_ingot", has(ModItems.ROSE_GOLD_INGOT))
                         .save(recipeOutput);
 
                 shaped(RecipeCategory.FOOD, ModItems.ROSE_GOLDEN_APPLE)

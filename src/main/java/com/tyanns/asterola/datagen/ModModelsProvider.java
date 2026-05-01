@@ -1,7 +1,9 @@
 package com.tyanns.asterola.datagen;
 
+import com.tyanns.asterola.armor.ModEquipmentAssets;
 import com.tyanns.asterola.block.ModBlocks;
 import com.tyanns.asterola.item.ModItems;
+import com.tyanns.asterola.trim.ModMaterialAssetGroup;
 import com.tyanns.asterola.trim.ModTrimMaterials;
 import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
@@ -35,7 +37,7 @@ public class ModModelsProvider extends FabricModelProvider {
 
     private static final List<ItemModelGenerators.TrimMaterialData> CUSTOM_TRIM_MATERIAL_MODELS = Util.make(new ArrayList<>(), list -> {
         list.addAll(ItemModelGenerators.TRIM_MATERIAL_MODELS);
-        list.add(new ItemModelGenerators.TrimMaterialData(MaterialAssetGroup.create("rose_gold"), ModTrimMaterials.ROSE_GOLD));
+        list.add(new ItemModelGenerators.TrimMaterialData(ModMaterialAssetGroup.ROSE_GOLD, ModTrimMaterials.ROSE_GOLD));
     });
 
     public final void generateCustomTrimmableItem(
@@ -88,10 +90,6 @@ public class ModModelsProvider extends FabricModelProvider {
         itemModelGenerators.generateFlatItem(ModItems.ROSE_GOLDEN_AXE, ModelTemplates.FLAT_HANDHELD_ITEM);
         itemModelGenerators.generateFlatItem(ModItems.ROSE_GOLDEN_HOE, ModelTemplates.FLAT_HANDHELD_ITEM);
         itemModelGenerators.generateSpear(ModItems.ROSE_GOLDEN_SPEAR);
-        itemModelGenerators.generateFlatItem(ModItems.ROSE_GOLDEN_HELMET, ModelTemplates.FLAT_ITEM);
-        itemModelGenerators.generateFlatItem(ModItems.ROSE_GOLDEN_CHESTPLATE, ModelTemplates.FLAT_ITEM);
-        itemModelGenerators.generateFlatItem(ModItems.ROSE_GOLDEN_LEGGINGS, ModelTemplates.FLAT_ITEM);
-        itemModelGenerators.generateFlatItem(ModItems.ROSE_GOLDEN_BOOTS, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(ModItems.MUSIC_DISC_YOU_ARE_BEAUTIFUL_VOMIT_VERSION, ModelTemplates.MUSIC_DISC);
 
         this.generateCustomTrimmableItem(itemModelGenerators, Items.TURTLE_HELMET, EquipmentAssets.TURTLE_SCUTE, TRIM_PREFIX_HELMET, false);
@@ -123,5 +121,9 @@ public class ModModelsProvider extends FabricModelProvider {
         this.generateCustomTrimmableItem(itemModelGenerators, Items.NETHERITE_CHESTPLATE, EquipmentAssets.NETHERITE, TRIM_PREFIX_CHESTPLATE, false);
         this.generateCustomTrimmableItem(itemModelGenerators, Items.NETHERITE_LEGGINGS, EquipmentAssets.NETHERITE, TRIM_PREFIX_LEGGINGS, false);
         this.generateCustomTrimmableItem(itemModelGenerators, Items.NETHERITE_BOOTS, EquipmentAssets.NETHERITE, TRIM_PREFIX_BOOTS, false);
+        this.generateCustomTrimmableItem(itemModelGenerators, ModItems.ROSE_GOLDEN_HELMET, ModEquipmentAssets.ROSE_GOLD, TRIM_PREFIX_HELMET, false);
+        this.generateCustomTrimmableItem(itemModelGenerators, ModItems.ROSE_GOLDEN_CHESTPLATE, ModEquipmentAssets.ROSE_GOLD, TRIM_PREFIX_CHESTPLATE, false);
+        this.generateCustomTrimmableItem(itemModelGenerators, ModItems.ROSE_GOLDEN_LEGGINGS, ModEquipmentAssets.ROSE_GOLD, TRIM_PREFIX_LEGGINGS, false);
+        this.generateCustomTrimmableItem(itemModelGenerators, ModItems.ROSE_GOLDEN_BOOTS, ModEquipmentAssets.ROSE_GOLD, TRIM_PREFIX_BOOTS, false);
     }
 }

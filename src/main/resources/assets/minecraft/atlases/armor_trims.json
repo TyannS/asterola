@@ -20,7 +20,8 @@
         "quartz": "minecraft:trims/color_palettes/quartz",
         "redstone": "minecraft:trims/color_palettes/redstone",
         "resin": "minecraft:trims/color_palettes/resin",
-        "rose_gold": "asterola:trims/color_palettes/rose_gold"
+        "rose_gold": "asterola:trims/color_palettes/rose_gold",
+        "rose_gold_darker": "asterola:trims/color_palettes/rose_gold_darker"
       },
       "textures": [
         "minecraft:trims/entity/humanoid/sentry",

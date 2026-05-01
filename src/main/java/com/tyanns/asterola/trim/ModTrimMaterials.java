@@ -15,7 +15,7 @@ public class ModTrimMaterials {
     public static final ResourceKey<TrimMaterial> ROSE_GOLD = registryKey("rose_gold");
 
     public static void bootstrap(final BootstrapContext<TrimMaterial> context) {
-        register(context, ROSE_GOLD, Style.EMPTY.withColor(0xFFC0D9), MaterialAssetGroup.create("rose_gold"));
+        register(context, ROSE_GOLD, Style.EMPTY.withColor(0xFFC0D9), ModMaterialAssetGroup.ROSE_GOLD);
     }
 
     private static void register(
