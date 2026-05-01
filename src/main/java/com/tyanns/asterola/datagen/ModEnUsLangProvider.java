@@ -22,6 +22,10 @@ public class ModEnUsLangProvider extends FabricLanguageProvider {
         translationBuilder.add(ModItems.ROSE_GOLDEN_AXE,"Rose Golden Axe");
         translationBuilder.add(ModItems.ROSE_GOLDEN_HOE,"Rose Golden Hoe");
         translationBuilder.add(ModItems.ROSE_GOLDEN_SPEAR,"Rose Golden Spear");
+        translationBuilder.add(ModItems.ROSE_GOLDEN_HELMET,"Rose Golden Helmet");
+        translationBuilder.add(ModItems.ROSE_GOLDEN_CHESTPLATE,"Rose Golden Chestplate");
+        translationBuilder.add(ModItems.ROSE_GOLDEN_LEGGINGS,"Rose Golden Leggings");
+        translationBuilder.add(ModItems.ROSE_GOLDEN_BOOTS,"Rose Golden Boots");
         translationBuilder.add(ModItems.ROSE_GOLDEN_APPLE, "Rose Golden Apple");
 
         translationBuilder.add(ModBlocks.ROSE_GOLD_BLOCK, "Rose Gold Block");

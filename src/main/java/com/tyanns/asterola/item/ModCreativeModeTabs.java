@@ -29,6 +29,10 @@ public class ModCreativeModeTabs {
                 output.accept(ModItems.ROSE_GOLDEN_AXE);
                 output.accept(ModItems.ROSE_GOLDEN_HOE);
                 output.accept(ModItems.ROSE_GOLDEN_SPEAR);
+                output.accept(ModItems.ROSE_GOLDEN_HELMET);
+                output.accept(ModItems.ROSE_GOLDEN_CHESTPLATE);
+                output.accept(ModItems.ROSE_GOLDEN_LEGGINGS);
+                output.accept(ModItems.ROSE_GOLDEN_BOOTS);
                 output.accept(ModItems.MUSIC_DISC_YOU_ARE_BEAUTIFUL_VOMIT_VERSION);
             }).build();
 

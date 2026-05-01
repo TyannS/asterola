@@ -1,6 +1,7 @@
 package com.tyanns.asterola.item;
 
 import com.tyanns.asterola.Asterola;
+import com.tyanns.asterola.armor.ModArmorMaterials;
 import com.tyanns.asterola.food.ModConsumables;
 import com.tyanns.asterola.food.ModFoods;
 import com.tyanns.asterola.sound.ModJukeboxSongs;
@@ -12,6 +13,8 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.*;
+import net.minecraft.world.item.equipment.ArmorMaterials;
+import net.minecraft.world.item.equipment.ArmorType;
 
 import java.util.function.Function;
 
@@ -25,6 +28,10 @@ public class ModItems {
     public static final Item ROSE_GOLDEN_AXE = registerItem("rose_golden_axe",p -> new AxeItem(ModToolMaterials.ROSE_GOLD, 7.0F, -2.9F, p));
     public static final Item ROSE_GOLDEN_HOE = registerItem("rose_golden_hoe", p -> new HoeItem(ModToolMaterials.ROSE_GOLD, 0.0F, -1.5F, p));
     public static final Item ROSE_GOLDEN_SPEAR = registerItem("rose_golden_spear", (new Item.Properties()).spear(ModToolMaterials.ROSE_GOLD, 1.05F, 0.95F, 0.6F, 3.5F, 12.0F, 8.0F, 5.1F, 13.0F, 4.6F));
+    public static final Item ROSE_GOLDEN_HELMET = registerItem("rose_golden_helmet", (new Item.Properties()).humanoidArmor(ModArmorMaterials.ROSE_GOLD, ArmorType.HELMET));
+    public static final Item ROSE_GOLDEN_CHESTPLATE = registerItem("rose_golden_chestplate", (new Item.Properties()).humanoidArmor(ModArmorMaterials.ROSE_GOLD, ArmorType.CHESTPLATE));
+    public static final Item ROSE_GOLDEN_LEGGINGS = registerItem("rose_golden_leggings", (new Item.Properties()).humanoidArmor(ModArmorMaterials.ROSE_GOLD, ArmorType.LEGGINGS));
+    public static final Item ROSE_GOLDEN_BOOTS = registerItem("rose_golden_boots", (new Item.Properties()).humanoidArmor(ModArmorMaterials.ROSE_GOLD, ArmorType.BOOTS));
     public static final Item MUSIC_DISC_YOU_ARE_BEAUTIFUL_VOMIT_VERSION = registerItem("music_disc_you_are_beautiful_vomit_version", (new Item.Properties()).stacksTo(1).rarity(Rarity.UNCOMMON).jukeboxPlayable(ModJukeboxSongs.YOU_ARE_BEAUTIFUL_VOMIT_VERSION));
 
     private static Item registerItem(final String name, final Function<Item.Properties, Item> itemFactory, final Item.Properties properties) {

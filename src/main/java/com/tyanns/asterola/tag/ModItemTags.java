@@ -8,6 +8,7 @@ import net.minecraft.world.item.Item;
 
 public class ModItemTags {
     public static final TagKey<Item> ROSE_GOLD_TOOL_MATERIALS = bind("rose_gold_tool_materials");
+    public static final TagKey<Item> REPAIRS_ROSE_GOLD_ARMOR = bind("repairs_rose_gold_armor");
 
     private static TagKey<Item> bind(final String name) {
         return TagKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(Asterola.MOD_ID, name));
