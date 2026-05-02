@@ -10,7 +10,13 @@ import java.util.Map;
 
 public interface ModArmorMaterials {
     ArmorMaterial ROSE_GOLD = new ArmorMaterial(
-            13, makeDefense(2, 5, 6, 2, 5), 28, ModSoundEvents.ARMOR_EQUIP_ROSE_GOLD, 0.0F, 0.0F, ModItemTags.REPAIRS_ROSE_GOLD_ARMOR, ModEquipmentAssets.ROSE_GOLD
+            13,
+            makeDefense(2, 5, 6, 2, 5),
+            28, ModSoundEvents.ARMOR_EQUIP_ROSE_GOLD,
+            0.0F,
+            0.0F,
+            ModItemTags.REPAIRS_ROSE_GOLD_ARMOR,
+            ModEquipmentAssets.ROSE_GOLD
     );
 
     static Map<ArmorType, Integer> makeDefense(final int boots, final int legs, final int chest, final int helm, final int body) {

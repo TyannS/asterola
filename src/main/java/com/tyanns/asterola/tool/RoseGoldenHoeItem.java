@@ -50,7 +50,7 @@ public class RoseGoldenHoeItem extends Item {
             AttributeModifier.Operation.ADD_VALUE);
 
     private static final ItemAttributeModifiers itemAttributeModifier = ItemAttributeModifiers.builder()
-            .add(Attributes.MOVEMENT_SPEED, movement_speedModifier, EquipmentSlotGroup.HAND)
+            .add(Attributes.MOVEMENT_SPEED, movement_speedModifier, EquipmentSlotGroup.MAINHAND)
             .add(Attributes.ATTACK_DAMAGE, attack_damageModifier, EquipmentSlotGroup.MAINHAND)
             .add(Attributes.ATTACK_SPEED, attack_speedModifier, EquipmentSlotGroup.MAINHAND)
             .build();
