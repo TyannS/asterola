@@ -11,7 +11,8 @@ import net.minecraft.world.item.component.ItemAttributeModifiers;
 import static net.minecraft.world.entity.ai.attributes.AttributeModifier.Operation.ADD_MULTIPLIED_BASE;
 
 public class RoseGoldenPickaxeItem extends Item {
-    private static final Identifier ROSE_GOLDEN_PICKAXE_MOVEMENT_SPEED_ID = Identifier.fromNamespaceAndPath(Asterola.MOD_ID, "rose_golden_pickaxe_movement_speed");
+    private static final Identifier ROSE_GOLDEN_PICKAXE_MOVEMENT_SPEED_ID =
+            Identifier.fromNamespaceAndPath(Asterola.MOD_ID, "rose_golden_pickaxe_movement_speed");
 
     private static final AttributeModifier movement_speedModifier = new AttributeModifier(
             ROSE_GOLDEN_PICKAXE_MOVEMENT_SPEED_ID,

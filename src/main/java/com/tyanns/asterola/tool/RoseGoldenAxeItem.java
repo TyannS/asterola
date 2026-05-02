@@ -36,7 +36,8 @@ import java.util.Optional;
 import static net.minecraft.world.entity.ai.attributes.AttributeModifier.Operation.ADD_MULTIPLIED_BASE;
 
 public class RoseGoldenAxeItem extends Item {
-    private static final Identifier ROSE_GOLDEN_AXE_MOVEMENT_SPEED_ID = Identifier.fromNamespaceAndPath(Asterola.MOD_ID, "rose_golden_axe_movement_speed");
+    private static final Identifier ROSE_GOLDEN_AXE_MOVEMENT_SPEED_ID =
+            Identifier.fromNamespaceAndPath(Asterola.MOD_ID, "rose_golden_axe_movement_speed");
 
     private static final AttributeModifier movement_speedModifier = new AttributeModifier(
             ROSE_GOLDEN_AXE_MOVEMENT_SPEED_ID,

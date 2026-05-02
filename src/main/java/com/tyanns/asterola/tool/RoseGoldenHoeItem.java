@@ -31,7 +31,8 @@ import java.util.function.Predicate;
 import static net.minecraft.world.entity.ai.attributes.AttributeModifier.Operation.ADD_MULTIPLIED_BASE;
 
 public class RoseGoldenHoeItem extends Item {
-    private static final Identifier ROSE_GOLDEN_HOE_MOVEMENT_SPEED_ID = Identifier.fromNamespaceAndPath(Asterola.MOD_ID, "rose_golden_hoe_movement_speed");
+    private static final Identifier ROSE_GOLDEN_HOE_MOVEMENT_SPEED_ID =
+            Identifier.fromNamespaceAndPath(Asterola.MOD_ID, "rose_golden_hoe_movement_speed");
 
     private static final AttributeModifier movement_speedModifier = new AttributeModifier(
             ROSE_GOLDEN_HOE_MOVEMENT_SPEED_ID,
@@ -55,7 +56,7 @@ public class RoseGoldenHoeItem extends Item {
             .build();
 
     public RoseGoldenHoeItem(Properties properties) {
-        super(properties.hoe(ModToolMaterials.ROSE_GOLD,-2.0F,-1.0F)
+        super(properties.hoe(ModToolMaterials.ROSE_GOLD, -2.0F, -1.0F)
                 .attributes(itemAttributeModifier));
     }
 
@@ -78,7 +79,7 @@ public class RoseGoldenHoeItem extends Item {
     public InteractionResult useOn(final UseOnContext context) {
         Level level = context.getLevel();
         BlockPos pos = context.getClickedPos();
-        Pair<Predicate<UseOnContext>, Consumer<UseOnContext>> logicPair = (Pair<Predicate<UseOnContext>, Consumer<UseOnContext>>)TILLABLES.get(
+        Pair<Predicate<UseOnContext>, Consumer<UseOnContext>> logicPair = (Pair<Predicate<UseOnContext>, Consumer<UseOnContext>>) TILLABLES.get(
                 level.getBlockState(pos).getBlock()
         );
         if (logicPair == null) {

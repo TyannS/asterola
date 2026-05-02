@@ -29,7 +29,8 @@ import java.util.Map;
 import static net.minecraft.world.entity.ai.attributes.AttributeModifier.Operation.ADD_MULTIPLIED_BASE;
 
 public class RoseGoldenShovelItem extends Item {
-    private static final Identifier ROSE_GOLDEN_SHOVEL_MOVEMENT_SPEED_ID = Identifier.fromNamespaceAndPath(Asterola.MOD_ID, "rose_golden_shovel_movement_speed");
+    private static final Identifier ROSE_GOLDEN_SHOVEL_MOVEMENT_SPEED_ID =
+            Identifier.fromNamespaceAndPath(Asterola.MOD_ID, "rose_golden_shovel_movement_speed");
 
     private static final AttributeModifier movement_speedModifier = new AttributeModifier(
             ROSE_GOLDEN_SHOVEL_MOVEMENT_SPEED_ID,
@@ -53,7 +54,7 @@ public class RoseGoldenShovelItem extends Item {
             .build();
 
     public RoseGoldenShovelItem(Properties properties) {
-        super(properties.shovel(ModToolMaterials.ROSE_GOLD,1.5F,-3.0F)
+        super(properties.shovel(ModToolMaterials.ROSE_GOLD, 1.5F, -3.0F)
                 .attributes(itemAttributeModifier));
     }
 
@@ -77,12 +78,12 @@ public class RoseGoldenShovelItem extends Item {
             return InteractionResult.PASS;
         } else {
             Player player = context.getPlayer();
-            BlockState newState = (BlockState)FLATTENABLES.get(blockState.getBlock());
+            BlockState newState = (BlockState) FLATTENABLES.get(blockState.getBlock());
             BlockState updatedState = null;
             if (newState != null && level.getBlockState(pos.above()).isAir()) {
                 level.playSound(player, pos, SoundEvents.SHOVEL_FLATTEN, SoundSource.BLOCKS, 1.0F, 1.0F);
                 updatedState = newState;
-            } else if (blockState.getBlock() instanceof CampfireBlock && (Boolean)blockState.getValue(CampfireBlock.LIT)) {
+            } else if (blockState.getBlock() instanceof CampfireBlock && (Boolean) blockState.getValue(CampfireBlock.LIT)) {
                 if (!level.isClientSide()) {
                     level.levelEvent(null, 1009, pos, 0);
                 }
