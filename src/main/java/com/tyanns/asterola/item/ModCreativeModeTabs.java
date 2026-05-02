@@ -34,6 +34,7 @@ public class ModCreativeModeTabs {
                 output.accept(ModItems.ROSE_GOLDEN_LEGGINGS);
                 output.accept(ModItems.ROSE_GOLDEN_BOOTS);
                 output.accept(ModItems.MUSIC_DISC_YOU_ARE_BEAUTIFUL_VOMIT_VERSION);
+                output.accept(ModItems.ASTER_COIN);
             }).build();
 
     public static void register() {

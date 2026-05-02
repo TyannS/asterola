@@ -90,6 +90,7 @@ public class ModModelsProvider extends FabricModelProvider {
         itemModelGenerators.generateFlatItem(ModItems.ROSE_GOLDEN_HOE, ModelTemplates.FLAT_HANDHELD_ITEM);
         itemModelGenerators.generateSpear(ModItems.ROSE_GOLDEN_SPEAR);
         itemModelGenerators.generateFlatItem(ModItems.MUSIC_DISC_YOU_ARE_BEAUTIFUL_VOMIT_VERSION, ModelTemplates.MUSIC_DISC);
+        itemModelGenerators.generateFlatItem(ModItems.ASTER_COIN, ModelTemplates.FLAT_ITEM);
 
         this.generateCustomTrimmableItem(itemModelGenerators, Items.TURTLE_HELMET, EquipmentAssets.TURTLE_SCUTE, TRIM_PREFIX_HELMET, false);
         this.generateCustomTrimmableItem(itemModelGenerators, Items.LEATHER_HELMET, EquipmentAssets.LEATHER, TRIM_PREFIX_HELMET, true);
