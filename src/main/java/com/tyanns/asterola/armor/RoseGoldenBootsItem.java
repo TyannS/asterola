@@ -27,8 +27,8 @@ public class RoseGoldenBootsItem extends Item {
             ADD_VALUE);
 
     private static final ItemAttributeModifiers itemAttributeModifier = ItemAttributeModifiers.builder()
-            .add(Attributes.MOVEMENT_SPEED, movement_speedModifier, EquipmentSlotGroup.FEET)
             .add(Attributes.ARMOR, armorModifier, EquipmentSlotGroup.FEET)
+            .add(Attributes.MOVEMENT_SPEED, movement_speedModifier, EquipmentSlotGroup.FEET)
             .build();
 
     public RoseGoldenBootsItem(final Properties properties) {

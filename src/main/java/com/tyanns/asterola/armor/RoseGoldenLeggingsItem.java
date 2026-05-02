@@ -27,8 +27,8 @@ public class RoseGoldenLeggingsItem extends Item {
             ADD_VALUE);
 
     private static final ItemAttributeModifiers itemAttributeModifier = ItemAttributeModifiers.builder()
-            .add(Attributes.MOVEMENT_SPEED, movement_speedModifier, EquipmentSlotGroup.LEGS)
             .add(Attributes.ARMOR, armorModifier, EquipmentSlotGroup.LEGS)
+            .add(Attributes.MOVEMENT_SPEED, movement_speedModifier, EquipmentSlotGroup.LEGS)
             .build();
 
     public RoseGoldenLeggingsItem(final Properties properties) {

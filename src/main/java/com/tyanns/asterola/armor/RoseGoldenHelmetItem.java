@@ -27,8 +27,8 @@ public class RoseGoldenHelmetItem extends Item {
             ADD_VALUE);
 
     private static final ItemAttributeModifiers itemAttributeModifier = ItemAttributeModifiers.builder()
-            .add(Attributes.MOVEMENT_SPEED, movement_speedModifier, EquipmentSlotGroup.HEAD)
             .add(Attributes.ARMOR, armorModifier, EquipmentSlotGroup.HEAD)
+            .add(Attributes.MOVEMENT_SPEED, movement_speedModifier, EquipmentSlotGroup.HEAD)
             .build();
 
     public RoseGoldenHelmetItem(Properties properties) {

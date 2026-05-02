@@ -27,8 +27,8 @@ public class RoseGoldenChestplateItem extends Item {
             ADD_VALUE);
 
     private static final ItemAttributeModifiers itemAttributeModifier = ItemAttributeModifiers.builder()
-            .add(Attributes.MOVEMENT_SPEED, movement_speedModifier, EquipmentSlotGroup.CHEST)
             .add(Attributes.ARMOR, armorModifier, EquipmentSlotGroup.CHEST)
+            .add(Attributes.MOVEMENT_SPEED, movement_speedModifier, EquipmentSlotGroup.CHEST)
             .build();
 
     public RoseGoldenChestplateItem(final Properties properties) {
