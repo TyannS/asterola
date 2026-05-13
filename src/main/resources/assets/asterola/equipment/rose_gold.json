@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "asterola:rose_gold"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "asterola:rose_gold"
+      }
+    ]
+  }
+}

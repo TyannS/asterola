@@ -1,0 +1,10 @@
+{
+  "asset_name": "rose_gold",
+  "description": {
+    "color": "#FFC0D9",
+    "translate": "trim_material.asterola.rose_gold"
+  },
+  "override_armor_assets": {
+    "asterola:rose_gold": "rose_gold_darker"
+  }
+}
