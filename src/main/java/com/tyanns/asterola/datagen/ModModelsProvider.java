@@ -1,10 +1,10 @@
 package com.tyanns.asterola.datagen;
 
-import com.tyanns.asterola.armor.ModEquipmentAssets;
+import com.tyanns.asterola.item.armor.ModEquipmentAssets;
 import com.tyanns.asterola.block.ModBlocks;
 import com.tyanns.asterola.item.ModItems;
-import com.tyanns.asterola.trim.ModMaterialAssetGroup;
-import com.tyanns.asterola.trim.ModTrimMaterials;
+import com.tyanns.asterola.item.trim.ModMaterialAssetGroup;
+import com.tyanns.asterola.item.trim.ModTrimMaterials;
 import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.minecraft.client.color.item.Dye;

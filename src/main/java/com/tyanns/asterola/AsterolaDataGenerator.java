@@ -2,8 +2,7 @@ package com.tyanns.asterola;
 
 import com.tyanns.asterola.datagen.*;
 import com.tyanns.asterola.sound.ModJukeboxSongs;
-import com.tyanns.asterola.sound.ModSoundEvents;
-import com.tyanns.asterola.trim.ModTrimMaterials;
+import com.tyanns.asterola.item.trim.ModTrimMaterials;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.minecraft.core.RegistrySetBuilder;

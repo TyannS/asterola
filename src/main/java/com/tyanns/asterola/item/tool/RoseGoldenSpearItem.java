@@ -1,4 +1,4 @@
-package com.tyanns.asterola.tool;
+package com.tyanns.asterola.item.tool;
 
 import com.tyanns.asterola.Asterola;
 import net.minecraft.resources.Identifier;

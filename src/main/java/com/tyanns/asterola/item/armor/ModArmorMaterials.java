@@ -1,4 +1,4 @@
-package com.tyanns.asterola.armor;
+package com.tyanns.asterola.item.armor;
 
 import com.google.common.collect.Maps;
 import com.tyanns.asterola.sound.ModSoundEvents;

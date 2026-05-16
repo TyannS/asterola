@@ -1,4 +1,4 @@
-package com.tyanns.asterola.trim;
+package com.tyanns.asterola.item.trim;
 
 import com.tyanns.asterola.Asterola;
 import net.minecraft.core.registries.Registries;

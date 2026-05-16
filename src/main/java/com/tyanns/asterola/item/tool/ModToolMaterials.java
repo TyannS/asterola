@@ -1,13 +1,8 @@
-package com.tyanns.asterola.tool;
+package com.tyanns.asterola.item.tool;
 
 import com.tyanns.asterola.tag.ModItemTags;
 import net.minecraft.tags.BlockTags;
-import net.minecraft.world.entity.EquipmentSlotGroup;
-import net.minecraft.world.entity.ai.attributes.AttributeModifier;
-import net.minecraft.world.entity.ai.attributes.Attributes;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ToolMaterial;
-import net.minecraft.world.item.component.ItemAttributeModifiers;
 
 public class ModToolMaterials {
     public static final ToolMaterial ROSE_GOLD = new ToolMaterial(

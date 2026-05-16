@@ -1,4 +1,4 @@
-package com.tyanns.asterola.armor;
+package com.tyanns.asterola.item.armor;
 
 import com.tyanns.asterola.Asterola;
 import net.minecraft.client.Minecraft;

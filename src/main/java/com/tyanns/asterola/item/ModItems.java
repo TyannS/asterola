@@ -1,12 +1,12 @@
 package com.tyanns.asterola.item;
 
 import com.tyanns.asterola.Asterola;
-import com.tyanns.asterola.armor.*;
-import com.tyanns.asterola.food.ModConsumables;
-import com.tyanns.asterola.food.ModFoods;
+import com.tyanns.asterola.item.armor.*;
+import com.tyanns.asterola.item.food.ModConsumables;
+import com.tyanns.asterola.item.food.ModFoods;
 import com.tyanns.asterola.sound.ModJukeboxSongs;
-import com.tyanns.asterola.tool.*;
-import com.tyanns.asterola.trim.ModTrimMaterials;
+import com.tyanns.asterola.item.tool.*;
+import com.tyanns.asterola.item.trim.ModTrimMaterials;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;

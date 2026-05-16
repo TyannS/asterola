@@ -1,4 +1,4 @@
-package com.tyanns.asterola.tool;
+package com.tyanns.asterola.item.tool;
 
 import com.google.common.collect.ImmutableMap;
 import com.google.common.collect.Maps;
@@ -14,7 +14,6 @@ import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ToolMaterial;
 import net.minecraft.world.item.component.ItemAttributeModifiers;
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;

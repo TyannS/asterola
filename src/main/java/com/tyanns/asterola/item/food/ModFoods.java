@@ -1,4 +1,4 @@
-package com.tyanns.asterola.food;
+package com.tyanns.asterola.item.food;
 
 import net.minecraft.world.food.FoodProperties;
 

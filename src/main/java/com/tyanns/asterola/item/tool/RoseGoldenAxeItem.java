@@ -1,4 +1,4 @@
-package com.tyanns.asterola.tool;
+package com.tyanns.asterola.item.tool;
 
 import com.google.common.collect.BiMap;
 import com.google.common.collect.ImmutableMap;
